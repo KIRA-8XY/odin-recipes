@@ -1,5 +1,5 @@
 * {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-weight: 250;
 }
 
@@ -58,9 +58,9 @@ img {
 }
   
   /* Change the link color on hover */
-li a:hover {
-    background-color: lightyellow;
+li a:hover, div a:hover{
     padding-block: 20px;
+    color:darkorange;
 }
 
 @font-face {
