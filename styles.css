@@ -52,8 +52,8 @@ h3 {
 }
 
 img {
-    height: 10000;
     width: auto;
+    max-width: 100%;
 
 }
 
@@ -69,10 +69,33 @@ img {
     float: left;
 }
   
- li a {
-    display: block;
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    max-width: 900px;
+}
+
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     color: black;
-    padding: 14px 16px;
+    text-decoration: none;
+}
+.recipe-card span{
+    width: 260px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:larger;
+    text-align:left;
+    font-weight: bold;
+}
+.recipe-card img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    display: block;
 }
 
 ol li{
@@ -85,10 +108,10 @@ ol li{
     text-decoration: none;
 } */
   /* Change the link color on hover */
-li a:hover{
-    padding-block: 20px;
+.recipe-card:hover span{
     color:darkorange;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .back-button:hover {
